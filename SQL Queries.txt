@@ -1,0 +1,51 @@
+CREATE TABLE Employees (
+email VARCHAR(40)  PRIMARY KEY, 
+fname VARCHAR(30),
+lname VARCHAR(30),
+password VARCHAR(30),
+city VARCHAR(50),
+phone VARCHAR(13),
+gender VARCHAR(20),
+dob DATE
+)
+
+create table profiles(
+email varchar(40), 
+designation varchar(30), 
+industry varchar(30), 
+function varchar(30)
+)
+
+CREATE TABLE languages (
+email VARCHAR(40), 
+language VARCHAR(30),
+proficiency VARCHAR(30)
+)
+
+CREATE TABLE skills (
+email VARCHAR(40), 
+skill VARCHAR(30),
+proficiency VARCHAR(30)
+)
+
+CREATE TABLE experiences (
+email VARCHAR(40),
+position VARCHAR(30),
+company VARCHAR(30),
+startdate DATE,
+enddate DATE,
+description VARCHAR(100)
+)
+
+insert into experiences(email, position, company, startdate, enddate, description) values('sujyothkarkera99@gmail.com', 'Developer', 'IBM', '2017-12-05', '2018-03-05', 'Miscellaneous Works')
+
+CREATE TABLE education (
+email VARCHAR(40),
+school VARCHAR(50),
+startdate DATE,
+enddate DATE,
+description VARCHAR(100)
+)
+
+insert into education(email, school, startdate, enddate, description) values('sujyothkarkera99@gmail.com', 'NMIMS', '2017-12-05', '2018-03-05', 'B.Tech.(IT)')
+insert into education(email, school, startdate, enddate, description) values('sujyothkarkera99@gmail.com', 'HFCHS', '2011-12-05', '2015-03-05', 'School')
